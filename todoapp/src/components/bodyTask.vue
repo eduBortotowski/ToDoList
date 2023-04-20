@@ -8,8 +8,7 @@
                 <p>{{ tarefa.conteudo }}</p>
             </div>
             <div class="bodyTaskRight">
-                <a href="">&#9881;</a>
-                <a href="">&#10006;</a>
+                <a href="">&#9778;</a>
             </div>
         </div>
         <div v-else-if="tarefa.status == 1" class="bodyTask Executting">
@@ -20,18 +19,18 @@
                 <p>{{ tarefa.conteudo }}</p>
             </div>
             <div class="bodyTaskRight">
-                <a href="">&#10004;</a>
+                <a href="">&#9778;</a>
             </div>
         </div>
         <div v-else-if="tarefa.status == 2" class="bodyTask Finished">
-            <div class="bodyTaskLeft">
-                <span style="color:#282727;">{{ tarefa.data }}</span>
+            <div class="bodyTaskLeft" style="border-right:1px solid #121212;">
+                <span style="color:#9d9c99;">{{ tarefa.data }}</span>
             </div>
-            <div class="bodyTaskCenter">
+            <div class="bodyTaskCenter" style="border-right:1px solid #121212;">
                 <p>{{ tarefa.conteudo }}</p>
             </div>
             <div class="bodyTaskRight">
-                <a href="">&#10004;</a>
+                <a href="">&#9778;</a>
             </div>
         </div>
     </div>
@@ -70,7 +69,7 @@
         margin: 0 auto;
         padding:1%;
         margin:1%;
-        background-color:white;
+        background-color:#1f1b24;
         border-radius:2px;
         display:table;
     }
@@ -82,6 +81,8 @@
         border-left:8px solid #f0b253;
     }
     .Finished {
+        background:#332940;
+        color:white;
         border-left:8px solid #282727;
     }
     .Finished p {
@@ -92,7 +93,7 @@
         height:auto;
         padding:1%;
         display:table-cell;
-        border-right:1px solid #efefef;
+        border-right:1px solid #9d9c99;
     }
     .bodyTaskLeft span {
         font-family:'Open Sans', sans-serif;
@@ -105,7 +106,7 @@
         width:70%;
         height:auto;
         padding:1%;
-        border-right:1px solid #efefef;
+        border-right:1px solid #9d9c99;
         display:table-cell;
     }
     .bodyTaskCenter p {
@@ -124,17 +125,19 @@
     }
     .bodyTaskRight a {
         font-family:'Open Sans', sans-serif;
-        font-size:15pt;
-        color:#22c3c1;
-        background-color:white;
-        border:1px solid #22c3c1;
+        font-size:auto;
+        background:none;
+        border:1px solid #9d9c99;
+        color:#9d9c99;
         padding:10px;
-        border-radius:50%;
+        border-radius:2px;
         margin:2%;
         text-decoration:none;
     }
     .bodyTaskRight a:hover {
-        background-color:#22c3c1;
         color:white;
+        background:#22c3c1;
+        border:1px solid #22c3c1;
     }
+    
 </style>

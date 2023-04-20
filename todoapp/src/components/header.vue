@@ -54,9 +54,9 @@
         background: linear-gradient(to left, rgba(34,195,193,1) 0%, rgba(45,253,237,1) 100%);
     }
     .bckHeader h1 {
-        font-family:'Open Sans', sans-serif; font-size:22pt; color:white; font-weight:bold;
+        font-family:'Open Sans', sans-serif; font-size:22pt; color:#1f1b24; font-weight:bold;
     }
     .bckHeader span {
-        font-family:'Open Sans', sans-serif; font-size:11pt; color:white; font-weight:bold;
+        font-family:'Open Sans', sans-serif; font-size:11pt; color:#332940; font-weight:bold;
     }
 </style>

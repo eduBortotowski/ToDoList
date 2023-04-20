@@ -21,6 +21,6 @@
 </script>
 <style>
     * {padding:0; margin:0; box-sizing:border-box;}
-    body {background-color:#f2f2f2;}
-    .container {width:90%; height:auto; padding:1%; margin:0 auto; text-align:center;}
+    body {background-color:#121212;}
+    .container {width:93%; height:auto; padding:2%; padding-top:4%; margin:0 auto; text-align:center;}
 </style>
